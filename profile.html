@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: white;
+        }
+        header {
+            background-color: transparent;
+            color: white;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            height: 100px;
+        }
+        .content {
+            margin-top: 50px; /* Increased for better spacing on mobile */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            padding: 0 15px; /* Added padding for better spacing */
+        }
+        .flip-container {
+            position: relative;
+            width: 200px; /* Adjusted width for better mobile display */
+            height: 200px; /* Adjusted height for better mobile display */
+            margin-bottom: 10px;
+        }
+        .flip-card {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: relative;
+            clip-path: circle(50%);
+        }
+        .flip-card img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid red;
+            padding: 5px 10px; /* Adjusted padding for better spacing */
+            margin: 10px;
+            height: 30px; /* Adjusted height for better responsiveness */
+            width: 100%; /* Adjusted width for better responsiveness */
+            max-width: 300px; /* Max width to prevent it from becoming too wide */
+            background-color: #f1f1f1;
+            color: black; /* Changed text color to black for better contrast */
+            font-weight: bold;
+            border-radius: 35px;
+            opacity: 0;
+            transform: translateY(0px);
+            animation: slideIn 1s forwards;
+        }
+        .box1 {
+            background-color: black;
+            animation-delay: 0s;
+            color: white;
+        }
+        .box2 {
+            background-color: black;
+            animation-delay: 0.6s;
+        }
+        .box3 {
+            background-color: black;
+            animation-delay: 0.8s;
+        }
+        .box4 {
+            background-color: black;
+            animation-delay: 1s;
+        }
+        .box5 {
+            background-color: black;
+            animation-delay: 1.5s;
+        }
+
+        a {
+            text-decoration: none;
+            color: black; /* Changed link color to black for better contrast */
+        }
+        h1 {
+            color: white;
+            background-color: transparent;
+            margin: 20px 0;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-500px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @media (max-width: 600px) {
+            
+            .flip-container {
+                width: 190px; /* Adjusted width for mobile */
+                height: 190px; /* Adjusted height for mobile */
+            }
+            .box {
+                width: 50%; /* Full width for mobile */
+                font-size: 20px; /* Adjust font size for better readability */
+            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #about-section{
+            display: none;
+            margin-top: 10px;
+            padding: -20px;  
+            line-height: 1.4;
+            background-color: transparent;
+            border-radius: 10px;
+            max-width: 400px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn
+        {
+            from
+            {
+                    opacity: 0;
+                    transform: translateY(40px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Profile</h1>
+    </header>
+    <div class="content">
+        <div class="flip-container">
+            <div class="flip-card">
+                <img src="https://i.ibb.co/TPPs6SF/Whats-App-Image-2024-08-18-at-13-53-47.jpg" alt="Profile Front Image">
+                <!-- Back image hidden; only front image is visible -->
+            </div>
+        </div>
+        <h1 onclick="hideAbout()">BHARATH RAJAGOPAL</h1><br>
+        <div class="box box1 link-box" onclick="showabout()">ABOUT</a></div>
+        <div class="box box2 link-box"><a href="https://www.linkedin.com/in/bharath-rajagopal-198b372a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linked In</a></div>
+        <div class="box box3 link-box"><a href="https://github.com/RBharath77">Github</a></div>
+        <div class="box box4 link-box"><a href="https://leetcode.com/u/RBharath/">Leetcode</a></div>
+        <div class="box box5 link-box"><a href="https://www.hackerrank.com/profile/rbharathrajagop1">Hackerrank</a></div>
+    </div>
+    <div id="about-section">
+            <h2 style="color: red;text-align: center;">About Me</h2>
+            <p style="text-align: center">Hii..🙋🏼‍♂️ I am <b>Bharath</b></p>
+            <ul>
+            <li>I Had Working on projects related to Web Development,IoT,and Application Platform.</li>
+            <li>And I Had Completed My Schooling at Vidya Nethraa Matriculation Higher Secondary School</li>
+            <li>And I Had Completed My Diploma at Nachimuthu Polytechnic College</li>
+            <li>I am Currently Pursuing at Dr.Mahalingam College of Engineering and Technology</li>
+        </ul>
+            <p style="color: red;text-align: center">Thank You For Read About Me</p>
+        </div>
+    </div>
+
+    <script>
+        function showabout() {
+            document.getElementById("about-section").style.display = "block";
+            document.querySelectorAll(".link-box, .box1").forEach(box => box.classList.add("hidden"));
+        }
+
+        function hideAbout() {
+            document.getElementById("about-section").style.display = "none";
+            document.querySelectorAll(".link-box, .box1").forEach(box => box.classList.remove("hidden"));
+        }
+    </script>
+</body>
+</html>
