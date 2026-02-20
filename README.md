@@ -1,6 +1,6 @@
 **🌐 Personal Portfolio – Bharath Rajagopal**
 
-This project is a responsive personal profile webpage built using HTML, CSS, and JavaScript. It provides a clean, modern design that introduces Krithik Raj, showcasing his educational background, technical interests, and professional links (LinkedIn, GitHub, LeetCode, HackerRank).
+This project is a responsive personal profile webpage built using HTML, CSS, and JavaScript. It provides a clean, modern design that introduces Bharath Rajagopal, showcasing his educational background, technical interests, and professional links (LinkedIn, GitHub, LeetCode, HackerRank).
 
 * Click the Link : http://bharathprofile.free.nf/profile.html?i=1
 
