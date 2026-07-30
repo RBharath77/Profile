@@ -1,4 +1,4 @@
-**🌐 Personal Portfolio – Bharath Rajagopal**
+**🌐 Personal Portfolio – Bharath R**
 
 This project is a responsive personal profile webpage built using HTML, CSS, and JavaScript. It provides a clean, modern design that introduces Bharath Rajagopal, showcasing his educational background, technical interests, and professional links (LinkedIn, GitHub, LeetCode, HackerRank).
 
